@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sifat Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <!-- ...existing code... -->
+<header class="bg-neutral-950 shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <span class="text-2xl font-extrabold text-orange-500 tracking-tight">SIFAT</span>
+        <!-- Desktop Nav -->
+        <nav class="space-x-6 hidden md:flex">
+            <a href="index.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Home</a>
+            <a href="about.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">About</a>
+            <a href="project.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Projects</a>
+            <a href="contact.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Contact</a>
+        </nav>
+        <!-- Hamburger Button -->
+        <button id="nav-toggle" class="md:hidden text-neutral-200 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <nav class="flex flex-col space-y-2">
+            <a href="index.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Home</a>
+            <a href="about.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">About</a>
+            <a href="project.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Projects</a>
+            <a href="contact.html" class="transition text-neutral-200 hover:text-orange-500 font-semibold">Contact</a>
+        </nav>
+    </div>
+</header>
+<script>
+    // Toggle mobile menu
+    document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.getElementById('nav-toggle');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    });
+</script>
+<!-- ...existing code... -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-orange-400 mb-8 text-center">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg flex flex-col hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Project 1" class="w-full h-40 object-cover">
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="text-xl font-semibold text-orange-400 mb-2">Portfolio Website</h3>
+                    <p class="text-neutral-300 mb-4 flex-1">A modern, responsive portfolio website to showcase my skills and projects. Built with HTML, Tailwind CSS, and JavaScript.</p>
+                    <a href="https://your-portfolio-link.com" target="_blank"
+                       class="mt-auto inline-block px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 hover:scale-105 transition-all duration-300">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg flex flex-col hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 2" class="w-full h-40 object-cover">
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="text-xl font-semibold text-orange-400 mb-2">Task Manager App</h3>
+                    <p class="text-neutral-300 mb-4 flex-1">A simple and intuitive task manager app to organize your daily activities. Features include add, edit, and delete tasks.</p>
+                    <a href="https://your-taskmanager-link.com" target="_blank"
+                       class="mt-auto inline-block px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 hover:scale-105 transition-all duration-300">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg flex flex-col hover:scale-105 transition-transform duration-300">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project 3" class="w-full h-40 object-cover">
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="text-xl font-semibold text-orange-400 mb-2">Blog Platform</h3>
+                    <p class="text-neutral-300 mb-4 flex-1">A clean and minimal blog platform where users can read and share articles. Built with a focus on performance and accessibility.</p>
+                    <a href="https://your-blog-link.com" target="_blank"
+                       class="mt-auto inline-block px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 hover:scale-105 transition-all duration-300">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Footer -->
+    <footer class="bg-neutral-950 mt-8">
+        <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-neutral-400 mb-4 md:mb-0">&copy; 2025 Sifat Portfolio. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="https://twitter.com/" target="_blank" class="text-neutral-400 hover:text-orange-500 transition hover:scale-125">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.38 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.13 12.13 0 0 1 3.11 4.9a4.28 4.28 0 0 0 1.32 5.71c-.7-.02-1.36-.21-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.72 8.72 0 0 0 24 4.59a8.48 8.48 0 0 1-2.54.7z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/" target="_blank" class="text-neutral-400 hover:text-orange-500 transition hover:scale-125">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.04A9.38 9.38 0 0 1 12 6.84c.85.004 1.7.12 2.5.34 1.91-1.32 2.75-1.04 2.75-1.04.55 1.4.2 2.44.1 2.7.64.71 1.03 1.62 1.03 2.74 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="text-neutral-400 hover:text-orange-500 transition hover:scale-125">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.76 1.37-1.56 2.82-1.56 3.01 0 3.57 1.98 3.57 4.56v5.64z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
